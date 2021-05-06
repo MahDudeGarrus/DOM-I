@@ -40,3 +40,65 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+//NAV
+const navBar = document.querySelectorAll('nav a');
+navBar[0].textContent = siteContent.nav['nav-item-1'];
+navBar[1].textContent = siteContent.nav['nav-item-2'];
+navBar[2].textContent = siteContent.nav['nav-item-3'];
+navBar[3].textContent = siteContent.nav['nav-item-4'];
+navBar[4].textContent = siteContent.nav['nav-item-5'];
+navBar[5].textContent = siteContent.nav['nav-item-6'];
+
+//CTA
+const ctaImage = document.getElementById('cta-img');
+ctaImage.src = siteContent.cta['img-src'];
+
+const ctaHeading = document.querySelector('h1');
+ctaHeading.textContent = siteContent.cta['h1'];
+
+const ctaButton = document.querySelector('button');
+ctaButton.textContent = siteContent['cta']['button'];
+
+
+//Main Content
+
+const MCHeaders = document.querySelectorAll('.main-content h4');
+const MCContent = document.querySelectorAll('p');
+
+//H4
+MCHeaders[0].textContent = siteContent['main-content']['features-h4'];
+MCHeaders[1].textContent = siteContent['main-content']['about-h4'];
+MCHeaders[2].textContent = siteContent['main-content']['services-h4'];
+MCHeaders[3].textContent = siteContent['main-content']['product-h4'];
+MCHeaders[4].textContent = siteContent['main-content']['vision-h4'];
+
+//Content
+MCContent[0].textContent = siteContent['main-content']['features-content'];
+MCContent[1].textContent = siteContent['main-content']['about-content'];
+MCContent[2].textContent = siteContent['main-content']['services-content'];
+MCContent[3].textContent = siteContent['main-content']['product-content'];
+MCContent[4].textContent = siteContent['main-content']['vision-content'];
+
+//image
+const middleImage = document.querySelector('.middle-img');
+middleImage.setAttribute('src', './img/mid-page-accent.jpg')
+
+
+
+//Contact
+const contactHeader = document.querySelector('.contact h4');
+contactHeader.textContent = siteContent['contact']['contact-h4'];
+
+const contactDeets = document.querySelectorAll('.contact p');
+contactDeets[0].textContent = siteContent['contact']['address'];
+contactDeets[1].textContent = siteContent['contact']['phone'];
+contactDeets[2].textContent = siteContent['contact']['email'];
+
+// "footer": {
+//   "copyright" : "Copyright Great Idea! 2018"
+
+//Footer
+
+const footerParagraph = document.querySelector('footer p');
+footerParagraph.textContent = siteContent['footer']['copyright'];
